@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #001f3f; /* Deep blue background */
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background-color: #004080; /* Lighter blue for header */
+    padding: 20px;
+}
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+header p {
+    font-size: 1.2em;
+    margin: 5px 0 0;
+}
+.search-filter-container {
+    margin: 20px auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-filter-container input, .search-filter-container select {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    width: 48%;
+}
+.slot-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.slot-machine {
+    background-color: #003366; /* Darker blue for slot cards */
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.slot-machine:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+.slot-machine img {
+    width: 100%;
+    border-radius: 10px;
+}
+.slot-machine p {
+    font-size: 1.1em;
+    margin: 10px 0 0;
+}
+.mini-screen {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: 80%; /* Fill 80% of the screen */
+    max-width: 600px; /* Optional max width */
+}
+.mini-screen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mini-screen .close-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.mini-screen img {
+    width: 100%; /* Responsive image */
+    border-radius: 10px;
+    margin: 10px 0;
+}
+footer {
+    background-color: #002244; /* Footer blue */
+    padding: 10px;
+    margin-top: 20px;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}

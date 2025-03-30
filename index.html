@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Mr. Blue Casino</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Mr. Blue Casino</h1>
+        <p>Choose your favorite slot machine and start spinning!</p>
+    </header>
+
+    <!-- Search and Filter Section -->
+    <div class="search-filter-container">
+        <input type="text" id="searchBar" placeholder="Search for a slot machine..." onkeyup="filterSlots()">
+        <select id="providerFilter" onchange="filterSlots()">
+            <option value="all">All Providers</option>
+            <option value="pragmatic">Pragmatic Play</option>
+            <option value="elk">ELK Studios</option>
+            <option value="netent">NetEnt</option>
+        </select>
+    </div>
+
+    <!-- Slot Machines Section -->
+    <div class="slot-container" id="slotContainer">
+        <!-- Slot machines will be dynamically generated here -->
+    </div>
+
+    <!-- Mini Screen Section -->
+    <div class="mini-screen" id="miniScreen">
+        <div class="mini-screen-header">
+            <h2 id="slotName">Slot Name</h2>
+            <button class="close-btn" onclick="closeMiniScreen()">X</button>
+        </div>
+        <img id="slotImage" src="" alt="Slot Machine" />
+        <p id="userBalance">Balance: $1000</p>
+        <p>Enjoy your game and good luck!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mr. Blue Casino. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
